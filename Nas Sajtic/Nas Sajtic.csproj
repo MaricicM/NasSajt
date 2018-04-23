@@ -210,6 +210,29 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Galerija\arabeska.JPG" />
+    <Content Include="Content\Images\Galerija\bal.JPG" />
+    <Content Include="Content\Images\Galerija\CeDaBidne.Nekad.png" />
+    <Content Include="Content\Images\Galerija\iBrowHanna.somee.com.png" />
+    <Content Include="Content\Images\Galerija\MontazneKuceIvanjica.rs.png" />
+    <Content Include="Content\Images\gif\123.gif" />
+    <Content Include="Content\Images\gif\giphy1.gif" />
+    <Content Include="Content\Images\gif\giphy2.gif" />
+    <Content Include="Content\Images\LapTop.png" />
+    <Content Include="Content\Images\logo\mm-logo-negativ-tekst.png" />
+    <Content Include="Content\Images\logo\mm-logo-negativ-znak.png" />
+    <Content Include="Content\Images\logo\mm-logo-negativ.png" />
+    <Content Include="Content\Images\logo\mm-logo-pozitiv-znak.png" />
+    <Content Include="Content\Images\logo\mm-logo-pozitv-tekst.png" />
+    <Content Include="Content\Images\logo\mm-logo-pozitv.png" />
+    <Content Include="Content\Images\logo\mm-logo-tekst.png" />
+    <Content Include="Content\Images\logo\mm-logo-znak.png" />
+    <Content Include="Content\Images\logo\mm-logo.png" />
+    <Content Include="Content\Images\logo\mm_logo.jpg" />
+    <Content Include="Content\Images\office-free-for-android.png" />
+    <Content Include="Content\Images\Phone.png" />
+    <Content Include="Content\Images\R-466929-1449337598-9409.jpeg.jpg" />
+    <Content Include="Content\Images\radovi-u-toku-1.jpg" />
     <Content Include="Content\mikroMars_global.css">
       <DependentUpon>mikroMars_global.scss</DependentUpon>
     </Content>
@@ -219,32 +242,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\123.gif" />
-    <Content Include="Images\arabeska.JPG" />
-    <Content Include="Images\bal.JPG" />
-    <Content Include="Images\CeDaBidne.Nekad.png" />
-    <Content Include="Images\giphy %281%29.gif" />
-    <Content Include="Images\giphy %281%29.jpg" />
-    <Content Include="Images\giphy1.gif" />
-    <Content Include="Images\giphy2.gif" />
-    <Content Include="Images\iBrowHanna.somee.com.png" />
-    <Content Include="Images\LapTop.png" />
-    <Content Include="Images\mm-logo-negativ-tekst.png" />
-    <Content Include="Images\mm-logo-negativ-znak.png" />
-    <Content Include="Images\mm-logo-negativ.png" />
-    <Content Include="Images\mm-logo-pozitiv-znak.png" />
-    <Content Include="Images\mm-logo-pozitv-tekst.png" />
-    <Content Include="Images\mm-logo-pozitv.png" />
-    <Content Include="Images\mm-logo-tekst.png" />
-    <Content Include="Images\mm-logo-znak.png" />
-    <Content Include="Images\mm-logo.png" />
-    <Content Include="Images\mm_logo.jpg" />
-    <Content Include="Images\monitor-computer-laptop-tablet-phone-vector-device-image-file-representing-realistic-devices-61014657.png" />
-    <Content Include="Images\MontazneKuceIvanjica.rs.png" />
-    <Content Include="Images\office-free-for-android.png" />
-    <Content Include="Images\Phone.png" />
-    <Content Include="Images\R-466929-1449337598-9409.jpeg.jpg" />
-    <Content Include="Images\radovi-u-toku-1.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -255,7 +252,11 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
-    <Content Include="fonts\kimberley bl.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\kimberley bl.ttf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -317,10 +318,6 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
