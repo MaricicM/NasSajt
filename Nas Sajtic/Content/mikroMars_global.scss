@@ -54,6 +54,7 @@ body{
         .l-row-left{
             flex:1;
             padding:10px;
+            text-align:justify;
             p{
                 color:white;
             }
@@ -61,6 +62,38 @@ body{
         .l-row-right{
             flex:1;
             padding:10px;
+        }
+    }    
+    h4{
+        margin-top:1em;
+    }
+}
+.l-proces{
+    display:flex;
+    padding:1em;
+    color:$boja_logo_plava;
+    background-color:white;
+    margin-top: 3.5em;
+    .l-proces-row{
+        margin-left:25rem;
+        margin-right:25rem;
+        flex:1;
+        display:flex;
+        justify-content:space-between;
+        .l-proces-img{
+            flex-basis:23%;
+            padding:10px;
+            text-align:center;
+            img{
+                cursor:pointer;
+            }
+            h5{
+                margin-top:1em;
+                font-weight:700;
+            }
+            p{
+                margin-top:1em;
+            }
         }
     }    
 }
