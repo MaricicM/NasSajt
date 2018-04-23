@@ -210,6 +210,8 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Images\dizajn-sajta-1.png" />
     <Content Include="Content\Images\Galerija\arabeska.JPG" />
     <Content Include="Content\Images\Galerija\bal.JPG" />
     <Content Include="Content\Images\Galerija\CeDaBidne.Nekad.png" />
@@ -218,6 +220,7 @@
     <Content Include="Content\Images\gif\123.gif" />
     <Content Include="Content\Images\gif\giphy1.gif" />
     <Content Include="Content\Images\gif\giphy2.gif" />
+    <Content Include="Content\Images\kodiranje-sajta.png" />
     <Content Include="Content\Images\LapTop.png" />
     <Content Include="Content\Images\logo\mm-logo-negativ-tekst.png" />
     <Content Include="Content\Images\logo\mm-logo-negativ-znak.png" />
@@ -231,8 +234,10 @@
     <Content Include="Content\Images\logo\mm_logo.jpg" />
     <Content Include="Content\Images\office-free-for-android.png" />
     <Content Include="Content\Images\Phone.png" />
+    <Content Include="Content\Images\pustanje-sajta-online.png" />
     <Content Include="Content\Images\R-466929-1449337598-9409.jpeg.jpg" />
     <Content Include="Content\Images\radovi-u-toku-1.jpg" />
+    <Content Include="Content\Images\razgovor-o-sajtu-1.png" />
     <Content Include="Content\mikroMars_global.css">
       <DependentUpon>mikroMars_global.scss</DependentUpon>
     </Content>
@@ -253,7 +258,6 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\kimberley bl.ttf" />

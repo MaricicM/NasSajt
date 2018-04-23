@@ -15,37 +15,82 @@ img.l-Logo {
 
 body {
   z-index: -1040 !important;
-  background-color: #a8daff !important; }
+  background: radial-gradient(white 60%, #e2e2e2); }
+
+.ta-center {
+  text-align: center !important;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 10px;
+  line-height: 0; }
+
+.custom-footer {
+  margin-top: 30px;
+  background-color: black;
+  padding-top: 25px;
+  background-color: gray; }
+
+.footer-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left; }
 
 .wrapper {
   margin-top: 4rem;
   left: 0;
   right: 0;
   color: white;
-  background-color: #3c85b2;
-  padding: .1em; }
+  padding: .5em; }
   .wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5, .wrapper h6 {
     text-align: center; }
 
 .l-container {
   display: flex;
   padding: .1em;
-  background-color: #3c85b2;
+  background: radial-gradient(rgba(73, 164, 220, 0.88), #3c85b2);
   margin-top: 3.5em; }
   .l-container .l-row {
     margin-left: 25rem;
     margin-right: 25rem;
     flex: 1;
-    display: flex; }
+    display: flex;
+    padding: 2em; }
     .l-container .l-row .l-row-left {
       flex: 1;
-      padding: 10px; }
+      padding: 10px;
+      text-align: justify; }
       .l-container .l-row .l-row-left p {
-        color: white;
-        font-size: 16px; }
+        color: white; }
     .l-container .l-row .l-row-right {
       flex: 1;
       padding: 10px; }
+  .l-container h4 {
+    margin-top: 1em; }
+
+.l-proces {
+  display: flex;
+  padding: 1em;
+  color: #3c85b2;
+  background-color: white;
+  margin-top: 3.5em; }
+  .l-proces .l-proces-row {
+    margin-left: 25rem;
+    margin-right: 25rem;
+    flex: 1;
+    display: flex;
+    justify-content: space-between; }
+    .l-proces .l-proces-row .l-proces-img {
+      flex-basis: 23%;
+      padding: 10px;
+      text-align: center; }
+      .l-proces .l-proces-row .l-proces-img img {
+        cursor: pointer; }
+      .l-proces .l-proces-row .l-proces-img h5 {
+        margin-top: 1em;
+        font-weight: 700; }
+      .l-proces .l-proces-row .l-proces-img p {
+        margin-top: 1em; }
 
 .index .img {
   display: block;

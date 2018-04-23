@@ -30,9 +30,28 @@ img.l-Logo {
 
 body {
     z-index: -1040 !important;
-    background-color: #a8daff !important;
+    background: radial-gradient(white 60%, #e2e2e2);
+   
 }
-
+.ta-center{
+    text-align:center !important;
+    margin-bottom:0;
+    padding-top:0;
+    padding-bottom:10px;
+    line-height:0;
+}
+.custom-footer{
+    margin-top:30px;
+    background-color:black;
+    padding-top:25px;
+    background-color: gray;
+}
+.footer-ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align:left;
+}
 
 // FLEX
 
@@ -42,8 +61,8 @@ body {
     left: 0;
     right: 0;
     color: white;
-    background-color: $boja_logo_plava;
-    padding: .1em;
+    //background-color: $boja_logo_plava;
+    padding: .5em;
 
     & h1, h2, h3, h4, h5, h6 {
         text-align: center;
@@ -53,46 +72,28 @@ body {
 .l-container {
     display: flex;
     padding: .1em;
-    background-color: $boja_logo_plava;
-    margin-top: 3.5em;
-<<<<<<< HEAD
-
-    .l-row {
-        margin-left: 25rem;
-        margin-right: 25rem;
-        flex: 1;
-        display: flex;
-
-        .l-row-left {
-            flex: 1;
-            padding: 10px;
-
-            p {
-                color: white;
-                font-size: 16px;
-=======
+    //background-color: $boja_logo_plava;
+    background: radial-gradient(rgba(73, 164, 220, 0.88),$boja_logo_plava);
+    margin-top: 3.5em; 
     .l-row{
         margin-left:25rem;
         margin-right:25rem;
         flex:1;
         display:flex;
+        padding:2em;
         .l-row-left{
             flex:1;
             padding:10px;
             text-align:justify;
             p{
                 color:white;
->>>>>>> 3a7f193b4f62ac1e6b35bc246e6836c781ca4a20
             }
         }
 
         .l-row-right {
             flex: 1;
             padding: 10px;
-        }
-<<<<<<< HEAD
-    }
-=======
+        }        
     }    
     h4{
         margin-top:1em;
@@ -125,8 +126,7 @@ body {
                 margin-top:1em;
             }
         }
-    }    
->>>>>>> 3a7f193b4f62ac1e6b35bc246e6836c781ca4a20
+    }  
 }
 
 .index {

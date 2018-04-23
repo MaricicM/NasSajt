@@ -41,9 +41,42 @@
     <div>
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - MicroMars</p>
+        <footer class="custom-footer">
+            <div class="container">
+                <div class="row row-wrap">
+                    <div class="col-md-5">
+                        <div>
+                            <a class="logo" href="/Home/Index">
+                                <img src="~/Content/Images/logo/mm-logo.png" height="25" alt="MikroMars" title="MikroMars Logo" /><br />
+                            </a>
+                        </div>
+                    </div>                    
+                    <div class="col-md-3">
+                        <ul class="footer-ul">
+                            <li><a href="/Home/ONama">O nama</a></li>
+                            <li><a href="/Home/Index">Početna</a></li>
+                            <li><a href="/Home/Galerija">Galerija</a></li>
+                            <li><a href="/Home/Ponuda">Ponuda</a></li>
+                        </ul>
+                    </div>    
+                    <div class="col-md-4" style="text-align:right;">
+                        <p><b>KONTAKT</b>:</p>
+                        <p><strong>Miloš Maričić</strong> - 0123456789</p>
+                        <p><strong>Mirko Lišanin</strong> - 0123456789</p>
+                    </div>                   
+                </div>
+                <hr style="color:gray;border:0.5px solid;" />
+                <div class="row row-wrap">
+                    <div class="col-md-12 ta-center">
+                        <p style="color:gray">MikroMars polaže sva prava na sajt i sve njegove delove.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ta-center">
+                <p>MikroMars &copy; @DateTime.Now.Year</p>
+            </div>
         </footer>
+
     </div>
 
     @Scripts.Render("~/bundles/jquery")
