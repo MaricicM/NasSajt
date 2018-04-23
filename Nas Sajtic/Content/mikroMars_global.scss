@@ -55,6 +55,7 @@ body {
     padding: .1em;
     background-color: $boja_logo_plava;
     margin-top: 3.5em;
+<<<<<<< HEAD
 
     .l-row {
         margin-left: 25rem;
@@ -69,6 +70,19 @@ body {
             p {
                 color: white;
                 font-size: 16px;
+=======
+    .l-row{
+        margin-left:25rem;
+        margin-right:25rem;
+        flex:1;
+        display:flex;
+        .l-row-left{
+            flex:1;
+            padding:10px;
+            text-align:justify;
+            p{
+                color:white;
+>>>>>>> 3a7f193b4f62ac1e6b35bc246e6836c781ca4a20
             }
         }
 
@@ -76,7 +90,43 @@ body {
             flex: 1;
             padding: 10px;
         }
+<<<<<<< HEAD
     }
+=======
+    }    
+    h4{
+        margin-top:1em;
+    }
+}
+.l-proces{
+    display:flex;
+    padding:1em;
+    color:$boja_logo_plava;
+    background-color:white;
+    margin-top: 3.5em;
+    .l-proces-row{
+        margin-left:25rem;
+        margin-right:25rem;
+        flex:1;
+        display:flex;
+        justify-content:space-between;
+        .l-proces-img{
+            flex-basis:23%;
+            padding:10px;
+            text-align:center;
+            img{
+                cursor:pointer;
+            }
+            h5{
+                margin-top:1em;
+                font-weight:700;
+            }
+            p{
+                margin-top:1em;
+            }
+        }
+    }    
+>>>>>>> 3a7f193b4f62ac1e6b35bc246e6836c781ca4a20
 }
 
 .index {
