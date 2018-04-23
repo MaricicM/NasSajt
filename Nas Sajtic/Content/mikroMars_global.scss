@@ -1,0 +1,116 @@
+﻿//FONTOVI
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+// BOJE
+$boja_osnovna:#e2e2e2;
+$boja_logo_plava: #3c85b2;
+$boja_logo_narandzasta: #ff6a00;
+
+
+// OTHER
+img.l-Logo{
+    margin-top:10px;
+    margin-bottom:10px;
+    height:35px;
+    opacity:1!important;
+}
+.l-navbar-color{
+    background-color: $boja_osnovna !important;
+    border-color: $boja_logo_plava !important;
+}
+body{
+    z-index:-1040!important;
+    background-color:#a8daff !important;
+}
+
+
+// FLEX
+
+// INDEX
+.wrapper{
+    margin-top:4rem;
+    left:0;
+    right:0;
+    color:white;
+    background-color:$boja_logo_plava;
+    padding:.1em;
+    & h1,h2,h3,h4,h5,h6{
+        text-align:center;        
+    }
+}
+.l-container{
+    display:flex;
+    padding:.1em;
+    background-color:$boja_logo_plava;
+    margin-top: 3.5em;
+    .l-row{
+        margin-left:25rem;
+        margin-right:25rem;
+        flex:1;
+        display:flex;
+        .l-row-left{
+            flex:1;
+            padding:10px;
+            p{
+                color:white;
+            }
+        }
+        .l-row-right{
+            flex:1;
+            padding:10px;
+        }
+    }    
+}
+
+// NAVBAR
+.l-navbar{
+    display:flex;
+    justify-content:space-around;
+    a{
+        color:$boja_logo_narandzasta !important;
+    }
+    .l-navbar-color{
+    background-color: $boja_osnovna !important;
+    border-color: $boja_logo_plava !important;
+}
+    .l-navbar-left{
+        flex:1;   
+    }
+    .l-navbar-middle{
+        flex:1;
+    }
+    .l-navbar-right{
+        flex:1;
+    }    
+}
+
+
+// GALERY
+.l-image-display{
+    display:flex;
+    justify-content:space-around;
+    flex-flow:row wrap;
+    .l-image{
+        flex:1;    
+        text-align:center;            
+        img{
+            max-width:270px;
+            margin-bottom:15px;
+            border: 2px double $boja_logo_narandzasta;
+            &:hover{
+            transform:scale(1.5);
+            transition: transform 0.25s ease;
+        }
+        }        
+    }
+}
+
+
+// TEMP
+
+.imag{
+    opacity:1!important;
+}

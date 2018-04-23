@@ -10,28 +10,35 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top l-navbar-color">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Logo pending...", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Galerija", "Galerija", "Home")</li>
-                    <li>@Html.ActionLink("Ponuda", "Ponuda", "Home")</li>
-                    <li>@Html.ActionLink("O Nama", "ONama", "Home")</li>
-                    <li>@Html.ActionLink("Kontakt", "Kontakt", "Home")</li>
-                </ul>
-                @*@Html.Partial("_LoginPartial")*@
+            <div class="l-navbar">
+                <div class="l-navbar-left">
+                    <a href="/Home/Index"><img src="~/Images/mm-logo-znak.png" class="l-Logo" /></a>
+                </div>
+               <div class="l-navbar-middle">
+                   <div class="navbar-header">
+                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                       </button>
+                   </div>
+                   <div class="navbar-collapse collapse">
+                       <ul class="nav navbar-nav">
+                           <li>@Html.ActionLink("Galerija", "Galerija", "Home")</li>
+                           <li>@Html.ActionLink("Ponuda", "Ponuda", "Home")</li>
+                           <li>@Html.ActionLink("O Nama", "ONama", "Home")</li>
+                           <li>@Html.ActionLink("Kontakt", "Kontakt", "Home")</li>
+                       </ul>
+                       @*@Html.Partial("_LoginPartial")*@
+                   </div>
+               </div>
+                <div class="l-navbar-right"></div>
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div>
         @RenderBody()
         <hr />
         <footer>
