@@ -11,7 +11,7 @@
 
 body {
   z-index: -1040 !important;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 254, 0.8), rgba(73, 164, 220, 0.8)), url(Images/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 253, 0.8), rgba(73, 164, 220, 0.8)), url(Images/hero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
