@@ -121,7 +121,7 @@ img.l-Logo {
 .l-container {
   display: flex;
   padding: .1em;
-  background: radial-gradient(rgba(73, 164, 220, 0.88), #3c85b2);
+  background: radial-gradient(rgba(73, 164, 220, 0.88), #green);
   margin-top: 3.5em; }
   .l-container .l-row {
     margin-left: 25rem;
@@ -144,7 +144,7 @@ img.l-Logo {
 .l-proces {
   display: flex;
   padding: 1em;
-  color: #3c85b2;
+  color: #green;
   background-color: white; }
   .l-proces .l-proces-row {
     margin-left: 25rem;
@@ -204,10 +204,10 @@ img.l-Logo {
   .l-navbar a.as {
     color: radial-gradient(rgba(255, 255, 255, 0.8) 60%, rgba(226, 226, 226, 0.8)) !important; }
   .l-navbar .as:hover, .l-navbar :active {
-    color: #ff6a00 !important; }
+    color: #blue !important; }
   .l-navbar .l-navbar-color {
-    background-color: #e2e2e2 !important;
-    border-color: #3c85b2 !important; }
+    background-color: #red !important;
+    border-color: #green !important; }
   .l-navbar .l-navbar-left {
     flex: 1; }
   .l-navbar .l-navbar-middle {
@@ -216,8 +216,8 @@ img.l-Logo {
     flex: 1; }
 
 .l-navbar-color {
-  background-color: #e2e2e2 !important;
-  border-color: #3c85b2 !important; }
+  background-color: #red !important;
+  border-color: #green !important; }
 
 .l-image-display {
   display: flex;
@@ -229,7 +229,7 @@ img.l-Logo {
     .l-image-display .l-image img {
       max-width: 270px;
       margin-bottom: 15px;
-      border: 2px double #ff6a00; }
+      border: 2px double #blue; }
       .l-image-display .l-image img:hover {
         transform: scale(1.5);
         transition: transform 0.25s ease; }
