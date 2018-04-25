@@ -1,5 +1,6 @@
 ﻿//FONTOVI
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 $primary-font: 'Roboto', sans-serif;
 $secondary-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
@@ -8,30 +9,36 @@ $secondary-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida 
     src: url('fonts/kimberley bl.ttf') format('truetype');
 }
 
-
 // BOJE
 $boja_osnovna: #e2e2e2;
 $boja_logo_plava: #3c85b2;
 $boja_logo_narandzasta: #ff6a00;
+$boja_radial_belo-sivo: radial-gradient(rgba(255, 255, 255, 0.80) 60%, rgba(226, 226, 226, 0.80));
+$boja_apsolutno_crna: #000000;
 
-
-// OTHER
+// GLOBAL
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    z-index: -1040 !important;
+    background-image:linear-gradient(to right bottom, rgba(255, 255, 254, 0.80), rgba(73, 164, 220, 0.80)), url(Images/hero.jpg);  
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed; 
+    font-family: Montsserrat,sans-serif;
+}
+.imag {
+    opacity: 1 !important;
+}
 img.l-Logo {
     margin-top: 10px;
     margin-bottom: 10px;
     height: 35px;
     opacity: 1 !important;
-}
-
-.l-navbar-color {
-    background-color: $boja_osnovna !important;
-    border-color: $boja_logo_plava !important;
-}
-
-body {
-    z-index: -1040 !important;
-    background: radial-gradient(white 60%, #e2e2e2);
-   
 }
 .ta-center{
     text-align:center !important;
@@ -40,95 +47,8 @@ body {
     padding-bottom:10px;
     line-height:0;
 }
-.custom-footer{
-    margin-top:30px;
-    background-color:black;
-    padding-top:25px;
-    background-color: gray;
-}
-.footer-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align:left;
-}
-
-// FLEX
 
 // INDEX
-.wrapper {
-    margin-top: 4rem;
-    left: 0;
-    right: 0;
-    color: white;
-    //background-color: $boja_logo_plava;
-    padding: .5em;
-
-    & h1, h2, h3, h4, h5, h6 {
-        text-align: center;
-    }
-}
-
-.l-container {
-    display: flex;
-    padding: .1em;
-    //background-color: $boja_logo_plava;
-    background: radial-gradient(rgba(73, 164, 220, 0.88),$boja_logo_plava);
-    margin-top: 3.5em; 
-    .l-row{
-        margin-left:25rem;
-        margin-right:25rem;
-        flex:1;
-        display:flex;
-        padding:2em;
-        .l-row-left{
-            flex:1;
-            padding:10px;
-            text-align:justify;
-            p{
-                color:white;
-            }
-        }
-
-        .l-row-right {
-            flex: 1;
-            padding: 10px;
-        }        
-    }    
-    h4{
-        margin-top:1em;
-    }
-}
-.l-proces{
-    display:flex;
-    padding:1em;
-    color:$boja_logo_plava;
-    background-color:white;
-    margin-top: 3.5em;
-    .l-proces-row{
-        margin-left:25rem;
-        margin-right:25rem;
-        flex:1;
-        display:flex;
-        justify-content:space-between;
-        .l-proces-img{
-            flex-basis:23%;
-            padding:10px;
-            text-align:center;
-            img{
-                cursor:pointer;
-            }
-            h5{
-                margin-top:1em;
-                font-weight:700;
-            }
-            p{
-                margin-top:1em;
-            }
-        }
-    }  
-}
-
 .index {
     .img {
         display: block;
@@ -229,28 +149,116 @@ body {
         transition: all 2s;
     }
 }
+.l-container {
+    display: flex;
+    padding: .1em;
+    background: radial-gradient(rgba(73, 164, 220, 0.88),$boja_logo_plava);
+    margin-top: 3.5em; 
+    .l-row{
+        margin-left:25rem;
+        margin-right:25rem;
+        flex:1;
+        display:flex;
+        padding:2em;
+        .l-row-left{
+            flex:1;
+            padding:10px;
+            text-align:justify;
+            p{
+                color:white;
+            }
+        }
 
+        .l-row-right {
+            flex: 1;
+            padding: 10px;
+        }        
+    }    
+    h4{
+        margin-top:1em;
+    }
+} // < -- FLEX
+.l-proces{
+    display:flex;
+    padding:1em;
+    color:$boja_logo_plava;
+    background-color:white;
+    .l-proces-row{
+        margin-left:25rem;
+        margin-right:25rem;
+        flex:1;
+        display:flex;
+        justify-content:space-between;
+        .l-proces-img{
+            flex-basis:23%;
+            padding:10px;
+            text-align:center;
+            img{
+                cursor:pointer;
+            }
+            h5{
+                margin-top:1em;
+                font-weight:700;
+            }
+            p{
+                margin-top:1em;
+            }
+        }
+    }  
+} // < -- FLEX
+.l-wrapper {
+    margin-top: 4rem;
+    left: 0;
+    right: 0;
+    color: white;
+    //background-color: $boja_logo_plava;
+    padding: .5em;
+
+    & h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+}
 .ponuda {
     h1 {
         text-align: center;
     }
 }
-
 .radoviUToku {
     display: block;
     margin: auto;
     max-width: 500px;
 }
 
-// NAVBAR
+// LAYOUT
+.l-custom-footer{
+    margin-top:30px;
+    background-color:black;
+    padding-top:25px;
+    background: $boja_apsolutno_crna;
+    p{
+        color: white;
+        font-size:.8em;
+    }
+    img{
+        box-shadow:rgba(255,255,255,.2);
+    }
+}
+.l-footer-ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
 .l-navbar {
     display: flex;
     justify-content: space-around;
 
-    a {
-        color: $boja_logo_narandzasta !important;
+    a.as {
+        color: $boja_radial_belo-sivo !important;        
     }
-
+    .as:hover,:active{
+            color:$boja_logo_narandzasta !important;
+        }   
     .l-navbar-color {
         background-color: $boja_osnovna !important;
         border-color: $boja_logo_plava !important;
@@ -267,8 +275,11 @@ body {
     .l-navbar-right {
         flex: 1;
     }
-}
-
+} // < -- FLEX
+.l-navbar-color {
+    background-color: $boja_osnovna !important;
+    border-color: $boja_logo_plava !important;
+} // < -- FLEX
 
 // GALERY
 .l-image-display {
@@ -291,11 +302,4 @@ body {
             }
         }
     }
-}
-
-
-// TEMP
-
-.imag {
-    opacity: 1 !important;
-}
+} // < -- FLEX
