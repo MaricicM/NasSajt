@@ -220,6 +220,7 @@
     <Content Include="Content\Images\gif\123.gif" />
     <Content Include="Content\Images\gif\giphy1.gif" />
     <Content Include="Content\Images\gif\giphy2.gif" />
+    <Content Include="Content\Images\hero.jpg" />
     <Content Include="Content\Images\kodiranje-sajta.png" />
     <Content Include="Content\Images\LapTop.png" />
     <Content Include="Content\Images\logo\mm-logo-negativ-tekst.png" />
