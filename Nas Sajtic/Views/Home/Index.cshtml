@@ -1,10 +1,11 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+    
+
 <div class="container index">
     <div class="row" style="width:100%;height:200px;">
         <div class="col-sm-offset-2 col-sm-8" style="position:relative;">
-
             <span id="sp1" class="sp1">Brza izrada</span>
 
             <span id="sp101" class="sp2" style="left:10px;">O</span>
@@ -28,17 +29,57 @@
             <span id="sp201" class="sp3">Povoljne</span>
             <span id="sp202" class="sp4">Cene</span>
 
-            <img class="logo img" src="~/Content/Images/logo/mm-logo-tekst.png" style="max-width:25em;" />            
+            <img class="logo faded" src="~/Content/Images/logo/mm-logo-tekst.png" style="max-width:25em;" />
+
         </div>
     </div>
+
     <div class="row" style="position:relative; height:500px;">
-        <img class="laptop img" src="~/Content/Images/LapTop.png" />
-        <img class="fon img" src="~/Content/Images/Phone.png" />
-        <img class="tablet img" src="~/Content/Images/office-free-for-android.png" />
-        <img class="gif img" src="~/Content/Images/gif/giphy2.gif" />
-    </div>    
+        <img class="laptop faded" src="~/Content/Images/LapTop.png" />
+        <img class="fon faded" src="~/Content/Images/Phone.png" />
+        <img class="tablet faded" src="~/Content/Images/office-free-for-android.png" />
+        @*<img class="gif" src="~/Content/Images/gif/giphy2.gif" />*@
+            <img class="gif" src="~/Content/Images/izrada-sajtova-680x350.jpg" />
+            <img class="gif transparent" src="~/Content/Images/izrada-e-shopa-680x350.jpg" />
+            <img class="gif transparent" src="~/Content/Images/izrada-sajta-saljder-1-680x350.jpg" />
+            <img class="gif transparent" src="~/Content/Images/redizajn-sajtova-680x350.jpg" />
+            <img class="gif transparent" src="~/Content/Images/web-dizajn-680x350.jpg" />
+    </div> 
+     
+    @*<div class="row">
+        <div class="col-xs-12">
+            <div class="demo">
+                <div class="item">
+                    <ul id="content-slider" class="content-slider">
+                        <li class="zumOut">
+                            <img src="~/Content/Images/izrada-e-shopa-680x350.jpg" />
+                            <span>Izrada Inrenet Prodavnice</span>
+                        </li>
+                        <li class="zumOut prvi">
+                            <img src="~/Content/Images/izrada-sajta-saljder-1-680x350.jpg" />
+                            <span>Održavanje sajtova</span>
+                        </li>
+                        <li class="zumOut">
+                            <img src="~/Content/Images/izrada-sajtova-680x350.jpg" />
+                            <span>Izrada Web Stranica</span>
+                        </li>
+                        <li class="zumOut">
+                            <img src="~/Content/Images/redizajn-sajtova-680x350.jpg" />
+                            <span>Redizajn Sajtova</span>
+                        </li>
+                        <li class="zumOut">
+                            <img src="~/Content/Images/web-dizajn-680x350.jpg" />
+                            <span>Web Dizajn</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>*@     
 </div>
-<div class="l-wrapper">
+    
+
+<div class="wrapper">
     <div class="l-container">
         <div class="l-row">
             <div class="l-row-left">
@@ -82,12 +123,48 @@
 </div>
 
 @section scripts{
+    <script src="~/Scripts/lightslider.js"></script>
     <script>
 
         $(function () {
-            $('.laptop, .fon, .tablet, .gif').addClass('opaque');
-        });
+            $('.laptop, .fon, .tablet').addClass('opaque');
+            var gifovi = $('.gif');
+            var i = 0;
+            setInterval(function () {
+                $(gifovi[i]).animate({ opacity: 0 }, 1000);
+                i = (i == 4) ? 0 : i+1;
+                $(gifovi[i]).animate({ opacity: 1 }, 1000);
+            }, 4000);
 
+            //$("#content-slider").lightSlider({                
+            //    item: 3,
+            //    auto: true,
+            //    loop: true,
+            //    pauseOnHover: true,
+            //    pause: 4000,
+            //    speed: 800,
+            //    slideMargin: 0,
+            //    controls: false,
+            //    enableDrag: false,
+            //    freeMove: false,
+
+            //    onBeforeStart: function (el) {
+            //        $('.prvi').addClass('zumIn');
+            //    },
+            //    onBeforeSlide: function (el) {
+            //        $('.active').next().removeClass('zumIn');
+            //        if ($('.active').next().next().hasClass('prvi')) {
+            //            $('.prvi').addClass('zumIn');
+            //        }
+            //        $('.active').next().next().addClass('zumIn');
+            //    },
+            //    onAfterSlide: function (el) {
+            //        if ($('.active').hasClass('prvi')) {
+            //            $('.prvi').removeClass('zumIn');
+            //        }                    
+            //    }
+            //});
+        });
 
 
         $('#sp1').delay(100).animate({ left: 150 }, 1200).delay(500).animate({ left: -50 }, 500).animate({ left: 1500 }, 1000, function () {

@@ -26,7 +26,8 @@ namespace Nas_Sajtic
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/mikroMars_global.css",
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/lightslider.css"));
         }
     }
 }
